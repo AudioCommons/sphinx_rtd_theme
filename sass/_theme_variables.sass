@@ -2,6 +2,13 @@
 // that are set in wyrm_core/wy_variables.sass. You'll find wyrm in bower_components if you're looking
 // for a reference.
 
+// Audio Commons custom colors
+$ac-blue:                             #1E5055
+$ac-green:                            #0F783C
+$ac-red:                              #991933
+$ac-dark-grey:                        #303030
+$ac-light-grey:                       #F3F3F3
+
 $font-awesome-dir:                    "../font/"
 $static-img:                          "../img/"
 $mathjax-color:                       $text-color
@@ -9,12 +16,12 @@ $mathjax-color:                       $text-color
 $headerlink-color:                    $text-color
 
 // Code colors
-$text-viewcode-color:                 $green
+$text-viewcode-color:                 $ac-green
 $text-codexref-color:                 $text-color
 
 // Definition list colors
-$class-color:                         $blue
-$method-color:                        $gray
+$class-color:                         $ac-blue
+$method-color:                        $ac-blue
 
 // Footer colors
 $footer-color:                        $gray-light
@@ -38,10 +45,10 @@ $menu-link-active:                    $white
 
 // Navigation colors
 $nav-background-color:                $menu-background-color
-$nav-search-background-color:         $blue
+$nav-search-background-color:         $ac-blue
 $nav-search-color:                    $section-background-color
-$nav-link-color:                      $blue
-$nav-link-color-visited:              $purple
+$nav-link-color:                      $ac-green
+$nav-link-color-visited:              $ac-red
 $nav-link-color-hover:                lighten($nav-link-color, 6%) !default
 $nav-link-color-alt:                  hsl(33, 100%, 51%)
 
@@ -51,9 +58,39 @@ $sidebar-border-color:                $table-border-color
 $sidebar-title-background-color:      $table-border-color
 
 // Sphinx highlight color
-$highlight-color:                     $yellow
+$highlight-color:                     hsl(33, 100%, 51%)
 
-$base-font-family:                    "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif
-$custom-font-family:                  "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
+@import url(https://fonts.googleapis.com/css?family=Rajdhani:400,700)
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500)
+$base-font-family:                    "Roboto", sans-serif
+$custom-font-family:                  "Rajdhani", sans-serif
 $custom-font-family2:                 Georgia, serif
 $code-font-family:                    Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
+
+// Override link, headers colors and others
+$red: $ac-red
+$green: $ac-green
+$blue: $ac-blue
+
+section
+  a
+    color: $ac-green !important
+
+h1
+  font-size: 200% !important
+  color: $ac-blue !important
+  text-transform: uppercase
+
+h2
+  font-size: 170% !important
+  color: $ac-red !important
+  font-weight: 400 !important
+
+h3
+  font-size: 150% !important
+  color: $menu-link-medium !important
+  font-weight: 400 !important
+
+h4
+  font-size: 125% !important
+  font-weight: 400 !important
