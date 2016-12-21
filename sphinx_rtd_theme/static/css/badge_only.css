@@ -32,6 +32,14 @@ h4 {
   font-weight: 300 !important;
 }
 
+.wy-nav-top {
+  background-color: #1E5055 !important;
+}
+
+.wy-nav-top a {
+  color: white !important;
+}
+
 .fa:before {
   -webkit-font-smoothing: antialiased;
 }
